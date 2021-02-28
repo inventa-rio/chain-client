@@ -74,14 +74,13 @@
     &.v-list-item--active{
     .v-icon{
         color: #1770B1;
+      }
     }
+  }
 }
-}
-}
-
 
 .v-image__image{
-    margin-left: -10px;
+    margin-left: -10px !important;
 }
 
 </style>

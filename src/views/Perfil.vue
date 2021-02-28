@@ -3,7 +3,7 @@
     <navbar/>
     <v-content>
       <v-container fluid>
-        <p>Perfil</p>
+        <h2>Perfil</h2>
       </v-container>
     </v-content>
   </div>
