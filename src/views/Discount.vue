@@ -3,11 +3,56 @@
     <navbar/>
     <v-content>
       <v-container fluid>
-        <h2>Descontos</h2>
-        <div class="graphs-container">
-          <img src="../assets/graph1.png" width="45%"/>
-          <img src="../assets/graph2.png"/>
-          <img src="../assets/graph3.png" width="75%"/>
+        <h2>Desconto por embalagem</h2>
+        <div class="discount-container">
+          <v-card
+            class="card"
+            elevation="6"
+            width="370"
+          >
+            <v-card-title class="title">Atomatado</v-card-title>
+            <img src="../assets/atomatado.png"/>
+          </v-card>
+          <v-card
+            class="card"
+            elevation="6"
+            width="370"
+          >
+            <v-card-title  class="title">Atomatado</v-card-title>
+            <img src="../assets/atomatado.png"/>
+          </v-card>
+          <v-card
+            class="card"
+            elevation="6"
+            width="370"
+          >
+            <v-card-title  class="title">Atomatado</v-card-title>
+            <img src="../assets/atomatado.png"/>
+          </v-card>
+          <v-card
+            class="card"
+            elevation="6"
+            width="370"
+          >
+            <v-card-title class="title">Atomatado</v-card-title>
+            <img src="../assets/atomatado.png"/>
+          </v-card>
+          <v-card
+            class="card"
+            elevation="6"
+            width="370"
+          >
+            <v-card-title class="title">Atomatado</v-card-title>
+            <img src="../assets/atomatado.png"/>
+          </v-card>
+          <v-card
+            class="card"
+            elevation="6"
+            width="370"
+          >
+            <v-card-title class="title">Atomatado</v-card-title>
+            <img src="../assets/atomatado.png"/>
+          </v-card>
         </div>
       </v-container>
     </v-content>
@@ -32,17 +77,30 @@ export default {
     padding: 30px;
     font-size: 40px;
     }
-    .graphs-container{
-      // border: 3px solid red;
+    .discount-container{
+      margin-left: auto;
+      margin-right: auto;
       height: auto;
-      width: 94vw;
+      max-width: 1600px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+    }
+    .card{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 20px;
+      padding: 20px;
+
+      .title{
+        font-size: 32px;
+      }
 
       img{
-        padding: 38px;
+        padding: 10px;
       }
     }
 }

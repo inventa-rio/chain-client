@@ -3,6 +3,7 @@ import Login from '../views/Login'
 import Historic from '../views/Historic'
 import Perfil from '../views/Perfil'
 import Discount from '../views/Discount'
+import Create from '../views/Create'
 
 export default [
     {
@@ -37,5 +38,10 @@ export default [
         path: '/Discount',
         name: 'Discount',
         component: Discount
+    },
+    {
+        path: '/Create',
+        name: 'Create',
+        component: Create
     }
 ]
