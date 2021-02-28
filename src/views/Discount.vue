@@ -18,7 +18,7 @@
             elevation="6"
             width="370"
           >
-            <v-card-title  class="title">Atomatado</v-card-title>
+            <v-card-title  class="title">Carnes</v-card-title>
             <img src="../assets/atomatado.png"/>
           </v-card>
           <v-card
@@ -26,7 +26,7 @@
             elevation="6"
             width="370"
           >
-            <v-card-title  class="title">Atomatado</v-card-title>
+            <v-card-title  class="title">Blank e Tira</v-card-title>
             <img src="../assets/atomatado.png"/>
           </v-card>
           <v-card
@@ -34,7 +34,7 @@
             elevation="6"
             width="370"
           >
-            <v-card-title class="title">Atomatado</v-card-title>
+            <v-card-title class="title">Tintas</v-card-title>
             <img src="../assets/atomatado.png"/>
           </v-card>
           <v-card
@@ -42,7 +42,7 @@
             elevation="6"
             width="370"
           >
-            <v-card-title class="title">Atomatado</v-card-title>
+            <v-card-title class="title">Aerossol</v-card-title>
             <img src="../assets/atomatado.png"/>
           </v-card>
           <v-card
@@ -50,7 +50,7 @@
             elevation="6"
             width="370"
           >
-            <v-card-title class="title">Atomatado</v-card-title>
+            <v-card-title class="title">Rolo</v-card-title>
             <img src="../assets/atomatado.png"/>
           </v-card>
         </div>
@@ -97,6 +97,24 @@ export default {
 
       .title{
         font-size: 32px;
+        padding: 40px;
+      }
+
+      img{
+        padding: 10px;
+      }
+    }
+    .card:last-child{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 20px;
+      padding: 20px;
+
+      .title{
+        font-size: 32px;
+        padding: 45px;
       }
 
       img{

@@ -8,22 +8,113 @@
           <button class="btn" @click="$router.push('Create')">+ Agendar nova coleta</button>
         </div>
         <div class="collect-container">
-          <div class="collect-item">
-            
-          </div>
-          <div class="collect-item">
-            
-          </div>
-          <div class="collect-item">
-            
-          </div>
-          <div class="collect-item">
-            
-          </div>
-          <div class="collect-item">
-            
-          </div>
+          <v-card
+            class="card"
+            elevation="6"
+            width="80%"
+          >
+            <div class="item">
+              <h3>#150687</h3>
+            </div>
+            <div class="item">
+              <h3>25/02/2021</h3>
+            </div>
+            <div class="item">
+              <h3>1526Kg</h3>
+            </div>
+            <div class="item price">
+              <h3>R$853</h3>
+            </div>
+            <div class="item">
+              <h3>></h3>
+            </div>
+          </v-card>
+          <v-card
+            class="card"
+            elevation="6"
+            width="80%"
+          >
+          <div class="item">
+              <h3>#150687</h3>
+            </div>
+            <div class="item">
+              <h3>25/02/2021</h3>
+            </div>
+            <div class="item">
+              <h3>1526Kg</h3>
+            </div>
+            <div class="item price">
+              <h3>R$853</h3>
+            </div>
+            <div class="item">
+              <h3>></h3>
+            </div>
+          </v-card>
+           <v-card
+            class="card"
+            elevation="6"
+            width="80%"
+          >
+          <div class="item">
+              <h3>#150687</h3>
+            </div>
+            <div class="item">
+              <h3>25/02/2021</h3>
+            </div>
+            <div class="item">
+              <h3>1526Kg</h3>
+            </div>
+            <div class="item price">
+              <h3>R$853</h3>
+            </div>
+            <div class="item">
+              <h3>></h3>
+            </div>
+          </v-card>
+          <v-card
+            class="card"
+            elevation="6"
+            width="80%"
+          >
+          <div class="item">
+              <h3>#150687</h3>
+            </div>
+            <div class="item">
+              <h3>25/02/2021</h3>
+            </div>
+            <div class="item">
+              <h3>1526Kg</h3>
+            </div>
+            <div class="item price">
+              <h3>R$853</h3>
+            </div>
+            <div class="item">
+              <h3>></h3>
+            </div>
+          </v-card>
+          <v-card
+            class="card"
+            elevation="6"
+            width="80%"
+          >
+          <div class="item">
+              <h3>#150687</h3>
+            </div>
+            <div class="item">
+              <h3>25/02/2021</h3>
+            </div>
+            <div class="item">
+              <h3>1526Kg</h3>
+            </div>
+            <div class="item price">
+              <h3>R$853</h3>
+            </div>
+            <div class="item">
+              <h3>></h3>
+            </div>
+          </v-card>
         </div>
+        <h3 class="more">Ver mais</h3>
       </v-container>
     </v-content>
   </div>
@@ -51,6 +142,32 @@ export default {
     padding: 30px;
     font-size: 40px;
     }
+
+    h3{
+      font-size: 32px;
+    }
+
+    .more{
+      font-size: 24px;
+      color: var(--main-color);
+      margin-left: 50%;
+      margin-top: 2%;
+    }
+
+    .item{
+      display: flex;
+      padding: 20px;
+      margin-left: 7%;
+    }
+
+    .item:last-child{
+      color: rgb(218, 218, 218);
+    }
+
+    .price{
+      color: var(--main-color);
+    }
+
     .collect-container{
       // border: 3px solid red;
       height: auto;
@@ -60,12 +177,18 @@ export default {
       align-items: center;
       flex-wrap: wrap;
     }
-    .collect-item{
-      width: 80vw;
-      height: 12vh;
-      margin: 15px;
-      background-color: bisque;
+
+    .card{
+      display: flex;
+      justify-content: center !important;
     }
+    // .collect-item{
+    //   width: 80vw;
+    //   height: 12vh;
+    //   margin: 15px;
+    //   background-color: bisque;
+    // }
+
     .btn{
       padding: 10px 40px 10px;
       background-color: #F6D944;

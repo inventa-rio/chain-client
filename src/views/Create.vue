@@ -21,7 +21,7 @@
                 label="Responsável"
                 outlined
             ></v-text-field>
-            <button>Agendar</button>
+            <button class="btn" @click="agendar()">Agendar</button>
         </div>
       </v-container>
     </v-content>
@@ -34,6 +34,12 @@ import navbar from '../components/NavBar'
 export default {
 components: {
     navbar
+  },
+
+  methods: {
+    agendar(){
+    alert("Parabens! Nova coleta cadastrada")
+    }
   }
 }
 </script>
@@ -53,9 +59,10 @@ components: {
     width: 40%;
 }
 .btn{
-      padding: 10px 40px 10px;
-      background-color: #F6D944;
-      border-radius: 5%;
+      padding: 15px 80px 15px !important;
+      background-color: var(--main-color) !important;
+      color: aliceblue;
+      border-radius: 8% !important;
       font-family: 'DM Sans', sans-serif;
       font-size: 20px;
     }
