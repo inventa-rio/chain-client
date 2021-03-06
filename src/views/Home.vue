@@ -7,7 +7,12 @@
         <div class="graphs-container">
           <img src="../assets/graph1.png" width="45%"/>
           <img src="../assets/graph2.png"/>
-          <img src="../assets/graph3.png" width="75%"/>
+          <GChart
+            type="ColumnChart"
+            :data="chartData"
+            :options="chartOptions"
+            class="chart-column"
+          />
         </div>
       </v-container>
     </v-content>
@@ -16,11 +21,39 @@
 
 <script>
 import navbar from '../components/NavBar'
+import { GChart } from 'vue-google-charts'
 
 export default {
   name: 'Home',
   components: {
-    navbar
+    navbar,
+    GChart
+  },
+   data () {
+    return {
+      // Array will be automatically processed with visualization.arrayToDataTable function
+      chartData: [
+        ['Mês', 'Meta', 'Alcançado'],
+        ['Janeiro', 1000, 400],
+        ['Fevereiro', 1170, 460],
+        ['Março', 660, 1120],
+        ['Abril', 1030, 540],
+        ['Maio', 1000, 400],
+        ['Junho', 1170, 460],
+        ['Julho', 660, 1120],
+        ['Agosto', 1030, 540],
+        ['Setembro', 1000, 400],
+        ['Outubro', 1170, 460],
+        ['Novembro', 660, 1120],
+        ['Dezembro', 1030, 540],
+      ],
+      chartOptions: {
+        chart: {
+          title: 'Coletado por mês',
+          subtitle: 'Meta mensal, e valor alcançado em toneladas',
+        }
+      }
+    }
   }
 }
 </script>
@@ -41,6 +74,15 @@ export default {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+
+      .chart-column{
+        height: 30%;
+        width: 60%;
+
+        g > text{
+          font-size: 14px;
+        }
+      }
 
       img{
         padding: 38px;

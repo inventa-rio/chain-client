@@ -4,6 +4,9 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
 import VMask from 'v-mask';
+import VueGoogleCharts from 'vue-google-charts'
+
+Vue.use(VueGoogleCharts)
 
 Vue.use(VMask);
 
