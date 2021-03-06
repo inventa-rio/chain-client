@@ -46,7 +46,7 @@ export default {
         weight:this.weight,
         plannedDate: this.plannedDate,
         warehouse: {
-          "address": "minha rua aí",
+          "address": "Rua tal tal tal",
           "pickups": [
           {
           "weight": this.weight,

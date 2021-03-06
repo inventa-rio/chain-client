@@ -24,10 +24,10 @@
               <h3>{{ item.plannedDate }}</h3>
             </div>
             <div class="item">
-              <h3>{{item.weight}}kg</h3>
+              <h3>{{item.weight}}T</h3>
             </div>
             <div class="item price">
-              <h3>R$853</h3>
+              <h3>R${{ item.discount }}</h3>
             </div>
             <div class="item">
               <h3>></h3>
@@ -79,6 +79,8 @@ export default {
             var mes = item.plannedDate.substring(5, 7)
             var ano = item.plannedDate.substring(0, 4)
             item.plannedDate = dia + '/' + mes + '/' + ano
+
+            item.discount = Math.floor(Math.random() * 65536);
           })
         });
     },
