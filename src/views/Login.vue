@@ -1,6 +1,11 @@
 <template>
   <div class="home">
-    
+    <div>
+
+    </div>
+    <div class="r-session">
+      
+    </div>
   </div>
 </template>
 
@@ -11,4 +16,5 @@ export default {
 </script>
 
 <style>
+
 </style>

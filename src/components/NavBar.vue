@@ -12,7 +12,7 @@
           <v-img src="../assets/nestle.png"></v-img>
         </v-list-item-avatar>
 
-        <v-list-item-title>Nestre</v-list-item-title>
+        <v-list-item-title>Nestle</v-list-item-title>
 
         <v-btn
           icon
